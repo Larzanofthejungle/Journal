@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".InputActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputTitle"
+        android:textSize="30dp"
+        android:hint="Set Title">
+    </EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/inputContent"
+        android:hint="Write Entry">
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:contentDescription="Sad"
+            android:onClick="moodClick"
+            tools:src="@drawable/mood_1" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:contentDescription="Mweh"
+            android:onClick="moodClick"
+            tools:src="@drawable/mood_2"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:contentDescription="Neutral"
+            android:onClick="moodClick"
+            tools:src="@drawable/mood_3"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:contentDescription="Glad"
+            android:onClick="moodClick"
+            tools:src="@drawable/mood_4"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:contentDescription="Happy"
+            android:onClick="moodClick"
+            tools:src="@drawable/mood_5"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/addEntryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="addEntry"
+        android:text="Add Entry" />
+
+</LinearLayout>
